@@ -1,7 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
- import Fetchdata from './data';
 
+import './App.css';
+import Fetchdata from './data';
 
 
 function App() {
