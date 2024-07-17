@@ -5,6 +5,9 @@
   font-size: 35px;
   font-weight: 700;
 }
+.clmr{
+  color: green;
+}
 @media only screen and (max-width: 600px) {
      .App{
       text-align:start;

@@ -6,6 +6,7 @@ import { TiTrash } from "react-icons/ti";
 const Wishlist = ({wish})=>{
   
    const [data,setdata] = useState([]);
+   
 
    useEffect(()=>{
      setdata([...data,wish]);
@@ -30,6 +31,7 @@ const Wishlist = ({wish})=>{
    console.log(data);
     return(
         <div>
+         
           <ul>
           { data.map((elm,index)=>
               <li style={{color:"red"}} id={elm.id} >{elm.wish} is ready for {elm.date}   
