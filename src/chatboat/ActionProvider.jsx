@@ -1,6 +1,8 @@
 import React from 'react';
+import { createChatBotMessage,setState } from 'react-chatbot-kit';
 
-const ActionProvider = ({ createChatBotMessage, setState, children }) => { 
+
+const ActionProvider = ({ children }) => { 
   
 
     const handleHello = () => {
