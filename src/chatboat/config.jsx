@@ -1,17 +1,15 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
-import Realchat from './reaclchat';
+import Realchat from './realchat';
+
 
 const config = {
-  initialMessages: [createChatBotMessage(`Hello world`),createChatBotMessage(<Realchat />)],
-
-  // widgets: [
-  //   {
-  //     widgetName: 'customMessage',
-  //     widgetFunc: (props) => <Cust {...props} />,
-  //     mapStateToProps: ["parse"],  // Ensuring that the parse function is available
-  //   },
-  // ]
- 
+  initialMessages: [createChatBotMessage(`Hello world`),createChatBotMessage(`tell me about yourself.`,{widget:"Realchat"})],
+  widgets:[
+    {
+      widgetName:"Realchat",
+      widgetFunc:(props)=><Realchat {...props} />
+    }
+  ]
 }
 
 export default config;
