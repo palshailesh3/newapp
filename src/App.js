@@ -5,10 +5,12 @@ import Fetchdata from './data';
 import Slider from './slidder';
 import Default from './defaul'
 import Chatboat from './chatboat';
+import Rerendercheck from './checkrerender';
 
 function App() {
   return (
     <div className="App">
+      <Rerendercheck />
       <Default />
       <Color />
       <Fetchdata />
